@@ -1,12 +1,5 @@
 import className from "classnames";
 
-const finalClassName = className('px-1.5',{
-    'bg-blue-500': true,
-    'text-yellow': true
-})
-
-console.log(finalClassName)
-
 function Button({
   children,
   primary,
@@ -24,6 +17,13 @@ function Button({
         'border-green-600 bg-green-500 text-white': success,
         'border-yellow-400 bg-yellow-400 text-white': warning,
         'border-red-500 bg-red-500 text-white': danger,
+        'rounded-full': rounded,
+        'bg-white': outline,
+        'text-blue-500': outline && primary,
+        'text-gray-900': outline && secondary,
+        'text-green-500': outline && success,
+        'text-yellow-400': outline && warning,
+        'text-red-500': outline && danger,
     })
   return <button className={classes}>{children}</button>;
 }
