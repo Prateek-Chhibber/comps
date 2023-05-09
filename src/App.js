@@ -1,22 +1,26 @@
 import Button from "./Button";
+import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
+import { VscWarning } from "react-icons/vsc";
 
 function App() {
   return (
-    <div>
+    <div><br/>
       <div>
-        <Button primary rounded outline >Click me!</Button>
-      </div>
+        <Button pimary >
+          <GoBell/>
+          Click me!</Button>
+      </div><br/>
       <div>
-        <Button secondary outline >Buy Now!</Button>
-      </div>
+        <Button secondary ><GoCloudDownload />Buy Now!</Button>
+      </div><br/>
       <div>
-        <Button success outline >See Deal!</Button>
-      </div>
+        <Button success ><GoDatabase />See Deal!</Button>
+      </div><br/>
       <div>
-        <Button warning outline >Hide Ads!</Button>
-      </div>
+        <Button warning ><VscWarning />Warnings!!</Button>
+      </div><br/>
       <div>
-        <Button danger outline >Something!</Button>
+        <Button danger >Something!</Button>
       </div>
     </div>
   );
