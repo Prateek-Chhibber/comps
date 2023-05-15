@@ -3,10 +3,13 @@ import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 import { VscWarning } from "react-icons/vsc";
 
 function App() {
+  const handleClick = () => {
+    console.log('click!!')
+  }
   return (
     <div><br/>
       <div>
-        <Button pimary >
+        <Button pimary onClick={handleClick}>
           <GoBell/>
           Click me!</Button>
       </div><br/>
@@ -20,7 +23,7 @@ function App() {
         <Button warning ><VscWarning />Warnings!!</Button>
       </div><br/>
       <div>
-        <Button danger >Something!</Button>
+        <Button danger onMouseEnter={handleClick}>Something!</Button>
       </div>
     </div>
   );
