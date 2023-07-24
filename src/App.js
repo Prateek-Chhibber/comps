@@ -19,6 +19,21 @@ function App() {
       id: '3',
       label: 'Can i use CSS on a project?',
       content: 'Yes'
+    },
+    {
+      id: '4',
+      label: 'Can i use EcmaScript on a project?',
+      content: 'Yes'
+    },
+    {
+      id: '5',
+      label: 'Can i use Java on a project?',
+      content: 'No'
+    },
+    {
+      id: '6',
+      label: 'Can i use Docker on a project?',
+      content: 'No'
     }
   ]
   return <Accordion items={items} />
